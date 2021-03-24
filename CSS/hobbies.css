@@ -16,7 +16,7 @@
         display: flex;
         border-bottom: 3px solid black;
     }
-
+      
     a:link{
         font-size: 30px;
         color: antiquewhite;
@@ -51,7 +51,7 @@
     }
     .menu figure{
         position:relative;
-        height: 400px;
+        height: 700px;
         overflow: hidden;
         border-radius: 6px;
         box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
@@ -122,7 +122,7 @@
 
     .Cantar img{
         height: 500px;
-        width:500px;
+        width:700px;
         margin: 50px;
         opacity: 0.5;
         transition:all 500ms ease;
@@ -159,7 +159,7 @@
 
     .Bailar img{
         height: 500px;
-        width:500px;
+        width:700px;
         margin: 50px;
         opacity: 0.5;
         transition:all 500ms ease;
@@ -196,7 +196,7 @@
 
     .Dibujar img{
         height: 500px;
-        width:500px;
+        width:700px;
         margin: 50px;
         opacity: 0.5;
         transition:all 500ms ease;
@@ -234,7 +234,7 @@
 
     .Juegos img{
         height: 500px;
-        width:500px;
+        width:700px;
         margin: 50px;
         opacity: 0.5;
         transition:all 500ms ease;
@@ -246,10 +246,25 @@
         opacity: 1;
     }
 
-    footer{
-        height: 100px;
-        background-color: rgb(0, 0, 0);
-        color: rgb(246, 252, 250);
-        font-size: 20px;
+    @keyframes animacion_test{
+        from{
+            background-color: rgb(0, 0, 0);
+        }
+        to{
+            background-color: rgb(13, 0, 61);
+        }
+    }
+    .animacion{
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
         text-align: center;
+        height: 200px;
+        display: flex;
+        justify-content: c enter;
+        align-items: center;
+        animation-name: animacion_test;
+        animation-duration: 1s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
     }
