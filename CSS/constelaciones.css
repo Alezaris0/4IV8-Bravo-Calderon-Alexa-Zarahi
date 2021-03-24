@@ -1,0 +1,1252 @@
+@charset "utf-8";
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+pre,
+code,
+address,
+variable,
+form,
+fieldset,
+blockquote {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th,
+caption {
+  font-weight: normal;
+  text-align: left;
+}
+
+img,
+fieldset {
+  border: 0;
+}
+
+ol {
+  padding-left: 1.4em;
+  list-style: decimal;
+}
+
+ul {
+  padding-left: 1.4em;
+  list-style: square;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+
+
+/*Cabecera*/
+
+.header {
+  background-color: #000000;
+  padding: 10px 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 65px;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1750px;
+  min-width: 970px;
+  margin: 0 auto;
+}
+
+.logo-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: xx-large;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+}
+
+.navigation ul {
+  margin: 0 20px;
+  padding: 0 10px;
+  list-style: none;
+}
+
+.navigation ul li {
+  display: inline-block;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: xx-large;
+  font-weight: 700;
+  color: rgba(252, 252, 252, 0.808);
+  letter-spacing: 2px;
+}
+
+.navigation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: rgb(255, 255, 255);
+}
+
+.navigation ul li a:visited {
+  color: rgb(250, 250, 250);
+}
+
+.navigation ul li a:hover {
+  color: white;
+}
+
+#signout {
+  padding: 7px;
+  margin: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #513752;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  width: 100px;
+  box-shadow: #000000 2px 2px 10px rgb(255, 255, 255);
+}
+
+#signout:hover {
+  color: #ffffff;
+  background-color: #000000;
+  border: 2px solid #ffffff;
+}
+
+
+/*Barra lateral*/
+
+#barra-lateral {
+  float: left;
+  background-color: #000000;
+  height: 100%;
+  position: fixed;
+  width: 255px;
+  top: 85px;
+}
+
+#barra-lateral ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+#barra-lateral ul li {
+  float: left;
+  min-height: 1px;
+  line-height: 1em;
+  vertical-align: middle;
+}
+
+#barra-lateral ul li.hover,
+#barra-lateral ul li:hover {
+  position: relative;
+  z-index: 599;
+  cursor: default;
+}
+
+#barra-lateral ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 598;
+  width: 100%;
+}
+
+#barra-lateral ul ul li {
+  float: none;
+}
+
+#barra-lateral ul li:hover>ul {
+  visibility: visible;
+}
+
+#barra-lateral ul ul {
+  top: 0;
+  left: 100%;
+}
+
+#barra-lateral ul li {
+  float: none;
+}
+
+#barra-lateral span,
+#barra-lateral a {
+  display: inline-block;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size-adjust: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#barra-lateral:after,
+#barra-lateral ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#barra-lateral ul,
+#mbarra-lateral li {
+  width: 100%;
+}
+
+#barra-lateral li {
+  background: #000000;
+}
+
+#barra-lateral li:hover {
+  background: #000000;
+  font-size: 1.2em;
+}
+
+#barra-lateral a {
+  color: white;
+  line-height: 160%;
+  padding: 11px 28px 11px 28px;
+  width: 253px;
+}
+
+#barra-lateral a:hover {
+  color: rgb(252, 252, 252);
+}
+
+#barra-lateral ul ul li {
+  background: #000000;
+}
+
+#barra-lateral ul ul li:hover {
+  background: #000000;
+}
+
+#barra-lateral ul ul li:hover a {
+  color: rgb(255, 255, 255);
+}
+
+
+/*Cuerpo de la página*/
+
+.contenedor-movimientos {
+  background: floralwhite;
+  float: initial;
+  left: 265px;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------*/
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: url("https://i.imgur.com/dE5um2K.jpg") no-repeat;
+  background-attachment: fixed;
+  
+}
+
+
+/*Autor*/
+#autor {
+  color: #ffffff;
+  font-size: 20px;
+  text-align: right;
+  text-shadow: 0 0 15px #66ff00;
+}
+/*Titulo de la pagina y animacion*/
+#title {
+  color: #ffffff;
+  text-align: center;
+  font-size: 80px;
+  animation: titulo 10s linear infinite alternate;
+}
+@keyframes titulo {
+  0% {
+    text-shadow: 0 0 25px #3300ff;
+  }
+  25% {
+    text-shadow: 0 0 25px #00ffff;
+  }
+  50% {
+    text-shadow: 0 0 25px #9933ff;
+  }
+  75% {
+    text-shadow: 0 0 25px #ff44ee;
+  }
+  100% {
+    text-shadow: 0 0 25px #ffffff;
+  }
+}
+
+/*Recuadro negro transparente en donde se situan las constelaciones*/
+#box {
+  background-color: rgba(17, 17, 17, 0.8);
+  width: 1350px;
+  height: 1200px;
+  position: relative;
+  top: 0%;
+  left: 15%;
+}
+
+/*Nombre de la constelacion*/
+h2 {
+  color: #ffffff;
+  font-size: 35px;
+  text-shadow: 0 0 20px #ff44ee;
+  /*text-decoration: underline;*/
+}
+
+/*Contenedor del texto informativo de cada constelacion*/
+.texto {
+  display: inline-block;
+  color: #66ccdd;
+  width: 800px;
+  position: relative;
+  text-shadow: 0 0 0.2px #ffffff;
+}
+
+/*Palabras remarcadas del texto*/
+o {
+  color: #ccffff;
+  font-weight: bold;
+}
+
+/*Texto de Orion*/
+#textoO {
+  height: 595px;
+  top: 0px;
+  left: 25px;
+  /*background-color:white;*/
+}
+
+/*Texto de Phoenix*/
+#textoP {
+  height: 420px;
+  top: 0px;
+  left: 70px;
+  /*background-color:white;*/
+}
+
+.star {
+  background-color: #ffffff;
+  background: radial-gradient(#ffffff, transparent);
+  width: 9px;
+  height: 9px;
+  border-radius: 100px;
+  position: absolute;
+}
+
+.est {
+  background: #ffffff;
+  border-radius: 100px;
+  width: 2px;
+  height: 2px;
+  position: relative;
+}
+
+.const {
+  border-style: double;
+  border-width: 3px;
+  border-color: #331144;
+}
+
+/* ================================ */
+/* ------- CONSTELACIONES --------- */
+/* ================================ */
+
+/* ----------- ORION ------------- */
+#orion {
+  background: url("https://i.imgur.com/nm2aQtp.png") no-repeat;
+  display: inline-block;
+  width: 495px;
+  height: 620px;
+  position: relative;
+  top: 15px;
+  left: 15px;
+
+  transition: all 2s linear;
+}
+
+#orion:hover {
+  background: url("https://i.imgur.com/Al1t8IW.png") no-repeat;
+  transition: all 2s linear;
+}
+
+#phoenix {
+  background: url("https://i.imgur.com/dUNGGo8.png") no-repeat;
+  display: inline-block;
+  width: 450px;
+  height: 450px;
+  position: relative;
+  top: 35px;
+  left: 60px;
+  transition: all 2s linear;
+}
+
+#phoenix:hover {
+  background: url("https://i.imgur.com/RnZuJqX.png") no-repeat;
+  transition: all 2s linear;
+}
+/* ================================ */
+/* ---------- ESTRELLAS ----------- */
+/* ================================ */
+
+/* ----------- ORION ------------- */
+#O1 {
+  top: 558px;
+  left: 125px;
+}
+
+#O2 {
+  top: 555px;
+  left: 270px;
+}
+
+#O3 {
+  top: 420px;
+  left: 170px;
+}
+
+#O4 {
+  top: 415px;
+  left: 200px;
+}
+
+#O5 {
+  top: 400px;
+  left: 230px;
+}
+
+#O6 {
+  top: 270px;
+  left: 150px;
+}
+
+#O7 {
+  top: 240px;
+  left: 250px;
+}
+
+#O8 {
+  top: 310px;
+  left: 290px;
+}
+
+#O9 {
+  top: 225px;
+  left: 125px;
+}
+
+#O10 {
+  top: 125px;
+  left: 100px;
+}
+
+#O11 {
+  top: 120px;
+  left: 125px;
+}
+
+#O12 {
+  top: 50px;
+  left: 165px;
+}
+
+#O13 {
+  top: 30px;
+  left: 205px;
+}
+
+#O14 {
+  top: 330px;
+  left: 425px;
+}
+
+#O15 {
+  top: 300px;
+  left: 430px;
+}
+
+#O16 {
+  top: 275px;
+  left: 415px;
+}
+
+#O17 {
+  top: 360px;
+  left: 415px;
+}
+
+#O18 {
+  top: 400px;
+  left: 390px;
+}
+
+#O19 {
+  top: 420px;
+  left: 375px;
+}
+
+/* ----------- PHOENIX ------------- */
+#P1 {
+  top: 415px;
+  left: 100px;
+}
+
+#P2 {
+  top: 370px;
+  left: 195px;
+}
+
+#P3 {
+  top: 250px;
+  left: 210px;
+}
+
+#P4 {
+  top: 290px;
+  left: 80px;
+}
+
+#P5 {
+  top: 350px;
+  left: 385px;
+}
+
+#P6 {
+  top: 40px;
+  left: 260px;
+}
+
+#P7 {
+  top: 15px;
+  left: 225px;
+}
+
+#P8 {
+  top: 20px;
+  left: 355px;
+}
+
+/* ================================ */
+/* ----------- ESTELAS ------------ */
+/* ================================ */
+
+/* ----------- ORION ------------- */
+#est_O1 {
+  top: 562px;
+  left: 128px;
+  transform: rotate(-1.5deg);
+  transform-origin: 0%;
+  animation: anim_estO1 18s linear infinite;
+}
+
+#est_O2 {
+  top: 562px;
+  left: 128px;
+  transform: rotate(-71.5deg);
+  transform-origin: 0%;
+  animation: anim_estO2 18s linear infinite;
+}
+
+#est_O3 {
+  top: 555px;
+  left: 275px;
+  transform: rotate(-104deg);
+  transform-origin: 0%;
+  animation: anim_estO3 18s linear 2s infinite;
+}
+
+#est_O4 {
+  top: 419px;
+  left: 175px;
+  transform: rotate(-11deg);
+  transform-origin: 0%;
+  animation: anim_estO4 18s linear 2s infinite;
+}
+
+#est_O5 {
+  top: 411px;
+  left: 205px;
+  transform: rotate(-27deg);
+  transform-origin: 0%;
+  animation: anim_estO5 18s linear 3s infinite;
+}
+
+#est_O6 {
+  top: 415px;
+  left: 175px;
+  transform: rotate(-97.5deg);
+  transform-origin: 0%;
+  animation: anim_estO6 18s linear 2s infinite;
+}
+
+#est_O7 {
+  top: 392px;
+  left: 235px;
+  transform: rotate(-56deg);
+  transform-origin: 0%;
+  animation: anim_estO7 18s linear 4s infinite;
+}
+
+#est_O8 {
+  top: 260px;
+  left: 155px;
+  transform: rotate(-16.5deg);
+  transform-origin: 0%;
+  animation: anim_estO8 18s linear 6s infinite;
+}
+
+#est_O9 {
+  top: 298px;
+  left: 295px;
+  transform: rotate(-120deg);
+  transform-origin: 0%;
+  animation: anim_estO9 18s linear 6s infinite;
+}
+
+#est_O10 {
+  top: 257px;
+  left: 154px;
+  transform: rotate(-118deg);
+  transform-origin: 0%;
+  animation: anim_estO10 18s linear 5.9s infinite;
+}
+
+#est_O11 {
+  top: 210px;
+  left: 129px;
+  transform: rotate(-90deg);
+  transform-origin: 0%;
+  animation: anim_estO11 18s linear 7.8s infinite;
+}
+
+#est_O12 {
+  top: 208px;
+  left: 129px;
+  transform: rotate(-103.5deg);
+  transform-origin: 0%;
+  animation: anim_estO12 18s linear 7.8s infinite;
+}
+
+#est_O13 {
+  top: 105px;
+  left: 105px;
+  transform: rotate(-10deg);
+  transform-origin: 0%;
+  animation: anim_estO13 18s linear 9.5s infinite;
+}
+
+#est_O14 {
+  top: 99px;
+  left: 128px;
+  transform: rotate(-48deg);
+  transform-origin: 0%;
+  animation: anim_estO14 18s linear 9.8s infinite;
+}
+
+#est_O15 {
+  top: 103px;
+  left: 104px;
+  transform: rotate(-49deg);
+  transform-origin: 0%;
+  animation: anim_estO15 18s linear 9.8s infinite;
+}
+
+#est_O16 {
+  top: 285px;
+  left: 295px;
+  transform: rotate(8deg);
+  transform-origin: 0%;
+  animation: anim_estO16 18s linear 6s infinite;
+}
+
+#est_O17 {
+  top: 302px;
+  left: 429px;
+  transform: rotate(108deg);
+  transform-origin: 0%;
+  animation: anim_estO17 18s linear 8s infinite;
+}
+
+#est_O18 {
+  top: 302px;
+  left: 429px;
+  transform: rotate(-79deg);
+  transform-origin: 0%;
+  animation: anim_estO18 18s linear 8s infinite;
+}
+
+#est_O19 {
+  top: 330px;
+  left: 419px;
+  transform: rotate(122deg);
+  transform-origin: 0%;
+  animation: anim_estO19 18s linear 9.5s infinite;
+}
+
+#est_O20 {
+  top: 268px;
+  left: 435px;
+  transform: rotate(-120deg);
+  transform-origin: 0%;
+  animation: anim_estO20 18s linear 10.3s infinite;
+}
+
+#est_O21 {
+  top: 365px;
+  left: 394px;
+  transform: rotate(125deg);
+  transform-origin: 0%;
+  animation: anim_estO21 18s linear 11.2s infinite;
+}
+
+/* --------------------------------- */
+/* ----------- PHOENIX ------------- */
+
+#est_P1 {
+  top: 418px;
+  left: 105px;
+  transform: rotate(-25deg);
+  transform-origin: 0%;
+  animation: anim_estP1 15s linear infinite;
+}
+
+#est_P2 {
+  top: 417px;
+  left: 105px;
+  transform: rotate(-56.5deg);
+  transform-origin: 0%;
+  animation: anim_estP2 15s linear infinite;
+}
+
+#est_P3 {
+  top: 370px;
+  left: 200px;
+  transform: rotate(-82.8deg);
+  transform-origin: 0%;
+  animation: anim_estP3 15s linear 1.5s infinite;
+}
+
+#est_P4 {
+  top: 248px;
+  left: 215px;
+  transform: rotate(163deg);
+  transform-origin: 0%;
+  animation: anim_estP4 15s linear 3s infinite;
+}
+
+#est_P5 {
+  top: 247px;
+  left: 215px;
+  transform: rotate(29.85deg);
+  transform-origin: 0%;
+  animation: anim_estP5 15s linear 3s infinite;
+}
+
+#est_P6 {
+  top: 244px;
+  left: 215px;
+  transform: rotate(-76.5deg);
+  transform-origin: 0%;
+  animation: anim_estP6 15s linear 3s infinite;
+}
+
+#est_P7 {
+  top: 280px;
+  left: 85px;
+  transform: rotate(-54.2deg);
+  transform-origin: 0%;
+  animation: anim_estP7 15s linear 5s infinite;
+}
+
+#est_P8 {
+  top: 340px;
+  left: 390px;
+  transform: rotate(-111.7deg);
+  transform-origin: 0%;
+  animation: anim_estP8 15s linear 5s infinite;
+}
+
+#est_P9 {
+  top: 28px;
+  left: 265px;
+  transform: rotate(-144.5deg);
+  transform-origin: 0%;
+  animation: anim_estP9 15s linear 8.7s infinite;
+}
+
+#est_P10 {
+  top: 27px;
+  left: 265px;
+  transform: rotate(-12.5deg);
+  transform-origin: 0%;
+  animation: anim_estP10 15s linear 8.7s infinite;
+}
+
+#est_P11 {
+  height: 1.5px;
+  top: -2.05px;
+  left: 229px;
+  transform: rotate(2.5deg);
+  transform-origin: 0%;
+  animation: anim_estP11 15s linear 10s infinite;
+}
+
+/* ================================ */
+/* --------- Animaciones ---------- */
+/* ================================ */
+
+/* ----------- ORION ------------- */
+
+@keyframes anim_estO1 {
+  0% {
+    width: 0.5px;
+  }
+  11%,
+  99% {
+    width: 145px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estO2 {
+  0% {
+    width: 0.5px;
+  }
+  11.5%,
+  99% {
+    width: 148px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estO3 {
+  0% {
+    width: 0.5px;
+  }
+  11.2%,
+  99% {
+    width: 161px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estO4 {
+  0% {
+    width: 0.5px;
+  }
+  6%,
+  99% {
+    width: 30px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estO5 {
+  0% {
+    width: 0.5px;
+  }
+  6.16%,
+  99% {
+    width: 35px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estO6 {
+  0% {
+    width: 0.5px;
+  }
+  22%,
+  99% {
+    width: 153px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estO7 {
+  0% {
+    width: 0.5px;
+  }
+  11%,
+  99% {
+    width: 110px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estO8 {
+  0% {
+    width: 0.5px;
+  }
+  12%,
+  99% {
+    width: 105px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estO9 {
+  0% {
+    width: 0.5px;
+  }
+  12%,
+  99% {
+    width: 80px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estO10 {
+  0% {
+    width: 0.5px;
+  }
+  11%,
+  99% {
+    width: 53px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estO11 {
+  0% {
+    width: 0.5px;
+  }
+  11.5%,
+  99% {
+    width: 108px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estO12 {
+  0% {
+    width: 0.5px;
+  }
+  11.5%,
+  99% {
+    width: 105px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estO13 {
+  0% {
+    width: 0.5px;
+  }
+  15%,
+  99% {
+    width: 25px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estO14 {
+  0% {
+    width: 0.5px;
+  }
+  18%,
+  99% {
+    width: 123px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estO15 {
+  0% {
+    width: 0.5px;
+  }
+  18%,
+  99% {
+    width: 100px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estO16 {
+  0% {
+    width: 0.5px;
+  }
+  11%,
+  99% {
+    width: 138px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estO17 {
+  0% {
+    width: 0.5px;
+  }
+  9%,
+  99% {
+    width: 34px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estO18 {
+  0% {
+    width: 0.5px;
+  }
+  14%,
+  99% {
+    width: 32px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estO19 {
+  0% {
+    width: 0.5px;
+  }
+  11%,
+  99% {
+    width: 48px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estO20 {
+  0% {
+    width: 0.5px;
+  }
+  16%,
+  99% {
+    width: 30px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estO21 {
+  0% {
+    width: 0.5px;
+  }
+  12%,
+  99% {
+    width: 25px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+/* --------------------------------- */
+/* ----------- PHOENIX ------------- */
+
+@keyframes anim_estP1 {
+  0% {
+    width: 0.5px;
+  }
+  10%,
+  99% {
+    width: 105px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estP2 {
+  0% {
+    width: 0.5px;
+  }
+  20%,
+  99% {
+    width: 200px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estP3 {
+  0% {
+    width: 0.5px;
+  }
+  10%,
+  99% {
+    width: 122px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estP4 {
+  0% {
+    width: 0.5px;
+  }
+  13%,
+  99% {
+    width: 137px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estP5 {
+  0% {
+    width: 0.5px;
+  }
+  13%,
+  99% {
+    width: 200px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estP6 {
+  0% {
+    width: 0.5px;
+  }
+  39%,
+  99% {
+    width: 217px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estP7 {
+  0% {
+    width: 0.5px;
+  }
+  25%,
+  99% {
+    width: 308px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estP8 {
+  0% {
+    width: 0.5px;
+  }
+  25%,
+  99% {
+    width: 335px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estP9 {
+  0% {
+    width: 0.5px;
+  }
+  9%,
+  99% {
+    width: 45px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estP10 {
+  0% {
+    width: 0.5px;
+  }
+  22.8%,
+  99% {
+    width: 95px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes anim_estP11 {
+  0% {
+    width: 0.5px;
+  }
+  14%,
+  99% {
+    width: 130px;
+  }
+  100% {
+    background-color: transparent;
+  }
+}

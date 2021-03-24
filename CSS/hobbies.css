@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', Arial, cursive; 
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+    section{
+        height: 700px;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        border-bottom: 3px solid black;
+    }
+
+    a:link{
+        font-size: 30px;
+        color: antiquewhite;
+        transition: all 500ms ease;
+    }
+    a:visited{
+        color:rgb(255, 255, 255);
+    }
+    a:hover{
+        font-size: 33px;
+        color:rgb(15, 15, 15);
+        transition: all 500ms ease;
+    }
+
+    nav a:link{
+        font-size: 40px;
+    }
+    nav a:visited{
+        color: antiquewhite;
+    }
+    nav a:hover{
+        font-size: 44px;
+        color: rgba(0, 0, 0, 0);
+    }
+    .menu{
+        
+        width: 100%;
+        display: auto;
+        justify-content: space-evenly;
+        align-items: center;
+        background-image: linear-gradient(to top, #0e004d 0%, #000000 100%);
+    }
+    .menu figure{
+        position:relative;
+        height: 400px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    }
+    .menu figure img{
+        width: 100%;
+        height: 100%;
+        transition: all 500ms ease;
+    }
+    .menu figure .capa{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 96, 116, .5);
+        transition: all 500ms ease;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center;
+    }
+    .menu figure:hover > .capa {
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu figure:hover > .capa h1{
+        margin-top: 100px;
+        margin-bottom: 15px;
+    }
+    .menu figure:hover > img{
+        transform: scale(1.3);
+    }
+    .menu figure .capa h1{
+        color: antiquewhite;
+        font-weight: 700;
+        margin-bottom: 120px;
+        transition: all 500ms ease;
+        margin-top: 30px;
+        font-size: 80px;
+    }
+    .menu figure .capa table{
+        color: antiquewhite;
+        width: 100%;
+        margin: auto;
+    }
+
+    .Cantar{
+        background-image: linear-gradient(to bottom, #1b094b 0%, #0e004d  100%); 
+        transition: all 500ms ease;
+        justify-content: space-evenly;
+    }
+
+    .Cantar1{
+        text-align: center;
+        width: 100%;
+        transition: all 500ms ease;
+        font-weight: 1000;
+        margin-top: 80px;
+        color: azure;
+    }
+
+    .Cantar1 h1{
+        font-size: 60px;
+    }
+
+    .Cantar p{
+        font-size: 30px;
+    }
+
+    .Cantar img{
+        height: 500px;
+        width:500px;
+        margin: 50px;
+        opacity: 0.5;
+        transition:all 500ms ease;
+    }
+
+
+    .Cantar img:hover{
+        transition:all 500ms ease;
+        opacity: 1;
+    }
+
+
+    .Bailar{
+        background-image: linear-gradient(to bottom , #010f35 0%, #0424b4  100%);
+        transition: all 500ms ease;
+    }
+
+    .Bailar1{
+        text-align: center;
+        width: 100%;
+        transition: all 500ms ease;
+        font-weight: 1000;
+        margin-top: 80px;
+        color: azure;
+    }
+
+    .Bailar1 h1{
+        font-size: 60px;
+    }
+
+    .Bailar1 p{
+        font-size: 30px;
+    }
+
+    .Bailar img{
+        height: 500px;
+        width:500px;
+        margin: 50px;
+        opacity: 0.5;
+        transition:all 500ms ease;
+    }
+
+
+    .Bailar img:hover{
+        transition:all 500ms ease;
+        opacity: 1;
+    }
+
+
+    .Dibujar{
+
+        background-image: linear-gradient(to bottom, #0424b4 0%, #24057a 100%);
+        transition: all 500ms ease;
+    }
+    .Dibujar1{
+        text-align: center;
+        width: 100%;
+        transition: all 500ms ease;
+        font-weight: 1000;
+        margin-top: 80px;
+        color: azure;
+    }
+
+    .Dibujar1 h1{
+        font-size: 60px;
+    }
+
+    .Dibujar1 p{
+        font-size: 30px;
+    }
+
+    .Dibujar img{
+        height: 500px;
+        width:500px;
+        margin: 50px;
+        opacity: 0.5;
+        transition:all 500ms ease;
+    }
+
+
+    .Dibujar img:hover{
+        transition:all 500ms ease;
+        opacity: 1;
+    }
+
+
+    .Juegos{
+
+        background-image: linear-gradient(to bottom, #24057a 0%, #000000 100%);
+        transition: all 500ms ease;
+    }
+
+    .Juegos1{
+        text-align: center;
+        width: 100%;
+        transition: all 500ms ease;
+        font-weight: 1000;
+        margin-top: 80px;
+        color: azure;
+    }
+
+    .Juegos1 h1{
+        font-size: 60px;
+    }
+
+    .Juegos p{
+        font-size: 30px;
+    }
+
+    .Juegos img{
+        height: 500px;
+        width:500px;
+        margin: 50px;
+        opacity: 0.5;
+        transition:all 500ms ease;
+    }
+
+
+    .Juegos img:hover{
+        transition:all 500ms ease;
+        opacity: 1;
+    }
+
+    footer{
+        height: 100px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(246, 252, 250);
+        font-size: 20px;
+        text-align: center;
+    }

@@ -1,0 +1,100 @@
+ul{
+    list-style-type: none;
+    margin-bottom: 50px;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+
+body{
+    font: 22px sans-serif;
+    background: var(--body-bg-color);
+    color: var(--text-color);
+}
+
+hr{
+    border-color: var(--hr-color);
+    
+}
+
+.volver{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.volver li{
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.volver a{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+.volver a span{
+    transition: transform 500ms ease-out;
+}
+
+.volver a span:first-child{
+    display: inline-block;
+    padding: 10px;
+}
+
+.volver a span:last-child{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+}
+
+.volver i{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.volver a:hover span:first-child{
+    transform: translateY(100%);
+}
+
+.volver a:hover span:last-child, 
+.volver[data-animation] a:hover span:last-child{
+    transform: none;
+}
+
+.volver[data-animation="to-top"] a span:last-child{
+    transform: translateY(100%);
+}
+
+.volver[data-animation="to-top"] a span:first-child{
+    transform: translateY(-100%);
+}
+
+.volver[data-animation="to-right"] a span:last-child{
+    transform: translateX(100%);
+}
+
+.volver[data-animation="to-right"] a span:first-child{
+    transform: translateX(-100%);
+}
+
+.volver[data-animation="to-left"] a span:last-child{
+    transform: translateX(100%);
+}
+
+.volver[data-animation="to-left"] a span:first-child{
+    transform: translateX(-100%);
+}
