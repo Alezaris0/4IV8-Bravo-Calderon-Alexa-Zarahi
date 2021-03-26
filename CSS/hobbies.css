@@ -157,7 +157,7 @@
         font-size: 30px;
     }
 
-    .Bailar img{
+    .Bailar video{
         height: 500px;
         width:700px;
         margin: 50px;
@@ -166,7 +166,7 @@
     }
 
 
-    .Bailar img:hover{
+    .Bailar video:hover{
         transition:all 500ms ease;
         opacity: 1;
     }
