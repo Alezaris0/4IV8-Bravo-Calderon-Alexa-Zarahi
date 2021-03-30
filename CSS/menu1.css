@@ -74,7 +74,7 @@ html, body{
 }
 .menu figure{
     position:relative;
-    height: 1500px;
+    height: 3000px;
     overflow: hidden;
     border-radius: 0px;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.418);
@@ -129,7 +129,7 @@ html, body{
 
 html, body{
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1l3MbBfLjVTipmuxVP1ZLw9KnfHZaf2oz3l10XEyeBAP3hD7N9DTYHT60_uDNoRMAiCc&usqp=CAU');
-    background-size: 50 000px ;
+    background-size: 40 000px ;
 }
 
 .main-container{
