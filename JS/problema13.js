@@ -6,20 +6,19 @@ function validarn(e){
 
     var prueba = String.fromCharCode(teclado);
     return patron.test(prueba);
-
-
 }
 
-function descuento(){
-    var valor = document.formulario.costo.value;
-    var result = parseInt(valor);
-    var desc = result*0.15;
-    var total = result-desc;
+function calculo(){
+    var valor = document.formulario.compra.value;
+    var valor_a = parseInt(valor);
+    var final = valor_a * 0.15;
 
-    document.formulario.descuentoo.value = "$"+total;
+    document.formulario.final.value = (valor_a - final) + " $";
+    document.formulario.final_descuento.value = final + " $";
 }
 
 function borrar(){
-    document.formulario.costo.value = "";
-    document.formulario.descuentoo.value = "";
+    document.formulario.compra.value = "";
+    document.formulario.final.value = "";
+    document.formulario.final_descuento.value = "";
 }
