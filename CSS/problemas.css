@@ -16,18 +16,18 @@
     size: 12;
     border-width: 2px;
     border-style: solid;
-    color: #05ff05;
+    color: #8605ff;
     letter-spacing: 3px;
     font-size: 10px;
 }
 
 *{
-    background-color: #f70000;
+    background-color: #da0e0ede;
 }
 
 p{
     font-size: 16px;
     align-items: center;
     justify-content: center;
-    color: #000000;
+    color: #ffffff;
 }
