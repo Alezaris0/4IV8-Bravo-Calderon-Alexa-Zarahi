@@ -1,36 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problema 11 JS</title>
-    <link rel="stylesheet" href="./CSS/problemas.css">
-    <script src="JS/problema11.js" ></script>
+    <title>Problema 1.1 JS</title>
+    <link rel="stylesheet" href="CSS/problemas.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" type="image/png" href="img/js_icon.png">
+    <script src="JS/problema11.js"></script>
 </head>
 <body>
-
-    <p><h2>
-        Se le ha ordenado diseñar una aplicación web
-        la cual pueda calcular el interes del pago mensual
-        de una inversion al 2%, para lo cual debera
-        diseñar un formulario haga dicho cálculo.
-    </h2></p>
-
-    <form method="post" name="formulario" >
-        <table align="center" border="1">
+    
+    <h1>
+        <br><br>Se le ha ordenado diseñar una aplicación web que pueda calcular el interés del pago mensual
+        de una inversion al 2 %, para lo cual deberá diseñar un formulario que haga dicho cálculo.
+    
+    <form method="post" name="formulario">
+        <table>
             <tr>
-                <td class="td_sup" >Introduzca el dinero a invertir: </td>
-                <td class="td_inf" ><input type="text" name="cantidad"
-                    onkeypress="return validarn(event)"> $</td>
+                <td class="td_sup">
+                    Digite la cantidad a invertir:
+                </td>
+                <td class="td_sup">
+                    <input type="text" name="cantidad" onkeypress="return validarn(event)"> $
+                </td>
             </tr>
             <tr>
-                <td>
+                <td class="td_inf">
                     Seleccione la cantidad de meses:
                 </td>
-                <td>
+                <td class="td_inf">
                     <select name="mes">
-                        <option value="0">Gestione y elija la cantidad
+                        <option value="0">Seleccione una cantidad
                         <option value="1">1
                         <option value="2">2
                         <option value="3">3
@@ -47,25 +51,31 @@
                 </td>
             </tr>
             <tr>
-                <td></td>
-                <td class="td_inf" > <input type="button" value="Interés"
-                    name="enviar" onclick="interes()" > </td> 
+                <td class="td_sup"></td>
+                <td class="td_sup"><input type="button" value="Obtener interés" name="enviar" onclick="calculo()"></td> 
             </tr>
             <tr>
-                <td class="td_sup" >Su saldo total con interés al 2 % es:</td>
-                <td> <input type="text" name="sueldoti"
-                    id="cantidadi" readonly="readonly" 
-                    class="input_text" > </td>
+                <td class="td_inf">
+                    Saldo total con interés al 2 %:
+                </td>
+                <td class="td_inf">
+                    <input type="text" name="sueldoti" id="cantidadi" readonly="readonly" class="input_text">
+                </td>
             </tr>
             <tr>
-                <td></td>
-                <td> <input type="button" value="Borrar" 
-                    name="reset" onclick="borrar()" > </td>
+                <td class="td_sup"></td>
+                <td class="td_sup">
+                    <input type="button" value="Borrar" name="reset" onclick="borrar()">
+                </td>
             </tr>
         </table>
+        <br>
+    <table>
+        <tr>
+            <td><a href="problemas.html">Regresar al menu</a></td>
+        </tr>
+    </table>
 
-    </form>
-    <br>
-    <a href="problemas.html">Regresar al menu</a>
+    </form></h1>
 </body>
 </html>

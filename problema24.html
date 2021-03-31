@@ -4,64 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problema 1.6 JS</title>
+    <title>Problema 2.4 JS</title>
     <link rel="stylesheet" href="CSS/problemas.css">
     <link rel="stylesheet" href="CSS/favicon.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="shortcut icon" type="image/png" href="img/js_icon.png">
-    <script src="JS/problema16.js"></script>
+    <script src="JS/problema24.js"></script>
 </head>
 <body>
    
     <h1>
-        <br><br>Realizar un algoritmo que calcule la edad de una persona.
+        <br><br>Calcular la utilidad que un trabajador recibe en el reparto anual de utilidades si 
+        este se le asigna como un porcentaje de su salario mensual que depende de su antigüedad en 
+        la empresa de acuerdo con la tabla dada.
     </h1>
     <form method="post" name="formulario">
         <table>
             <tr>
                 <td class="td_sup">
-                    Digite el año actual:
+                    Digite su sueldo mensual:
                 </td>
                 <td class="td_sup">
-                    <input type="text" name="año_actual" onkeypress="return validarn(event)">
+                    <input type="text" name="sueldo" onkeypress="return validarn(event)"> $
                 </td>
             </tr>
             <tr>
                 <td class="td_inf">
-                    Digite el año de su nacimiento:
+                    Digite su antigüedad en años:
                 </td>
                 <td class="td_inf">
-                    <input type="text" name="año_nacer" onkeypress="return validarn(event)">
+                    <input type="text" name="exp" onkeypress="return validarn(event)">
                 </td>
             </tr>
             <tr>
                 <td class="td_sup"></td>
                 <td class="td_sup">
-                    <input type="button" value="Calcular edad" name="enviar" onclick="calculo()">
+                    <input type="button" value="Calcular sueldo" name="enviar" onclick="calculo()">
                 </td>
             </tr>
             <tr>
                 <td class="td_inf">
-                    Edad aproximada:
+                    Utilidad:
                 <td class="td_inf">
-                    <input type="text" name="final" id="cantidad" readonly="readonly" class="input_text">
+                    <input type="text" name="utilidad_final" id="cantidad" readonly="readonly" class="input_text">
                 </td>
             </tr>
             <tr>
-                <td class="td_sup"></td>
                 <td class="td_sup">
+                    Sueldo con utilidad:
+                <td class="td_sup">
+                    <input type="text" name="sueldo_final" id="cantidad" readonly="readonly" class="input_text">
+                </td>
+            </tr>
+            <tr>
+                <td class="td_inf"></td>
+                <td class="td_inf">
                     <input type="button" value="Borrar" name="reset" onclick="borrar()">
                 </td>
             </tr>
         </table>
-        <br>
+    </form>
+    <br>
     <table>
         <tr>
             <td><a href="problemas.html">Regresar al menu</a></td>
         </tr>
     </table>
-    </form>
-    
 </body>
 </html>

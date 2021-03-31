@@ -8,8 +8,7 @@ function validarn(e){
     return patron.test(prueba);
 }
 
-
-function interes(){
+function calculo(){
     var valor = document.formulario.cantidad.value;
     var result = parseInt(valor);
     var interes = result*0.02;
@@ -20,6 +19,7 @@ function interes(){
 }
 
 function borrar(){
-    document.formulario.sueldoti.value = "";
     document.formulario.cantidad.value = "";
+    document.formulario.mes.value = "";
+    document.formulario.sueldoti.value = "";
 }
