@@ -44,11 +44,11 @@ public class Registro extends HttpServlet {
     public void init(ServletConfig cfg) throws ServletException{
         
         //lo primero que necesitamos es trazar la ruta al servidor DB
-        String URL = "jdbc:mysql:3307//localhost/registro4iv8";
+        String URL = "jdbc:mysql:3306//localhost/registro4iv8";
         //driver:gestor:puerto//IP/nombreBD
         
         String userName = "root";
-        String password = "ar428719";
+        String password = "=/U_x12%aX";
         
         try{
             //colocamos el tipo de driver
@@ -92,8 +92,6 @@ public class Registro extends HttpServlet {
             String nom, appat, apmat, correo, ip, iph;
             int edad, puerto, puertoh;
             
-           
-            
             nom = request.getParameter("nombre");
             appat = request.getParameter("appat");
             apmat = request.getParameter("appmat");
@@ -118,7 +116,7 @@ public class Registro extends HttpServlet {
             
             try{
                 
-                String q = "insert into Mregistr "
+                String q = "insert into Mregistro "
                         + "(nom_usu, appat_usu, apmat_usu, edad_usu, correo_usu) "
                         + "values ('"+nom+"', '"+appat+"', '"+apmat+"', "+edad+", '"+correo+"')";
                 
@@ -144,6 +142,14 @@ public class Registro extends HttpServlet {
                     + "Tu edad es: " +edad
                     + "<br>"
                     + "Tu correo electronico es:  "+correo);
+            out.println("<br>"
+                    + "IP local :" + ip
+                    + "<br>"
+                    + "Puerto Local :" + puerto
+                    + "<br>"
+                    + "IP Remota :" +iph
+                    + "<br>"
+                    + "Puerto Romoto :" +puertoh);
             out.println("<h1>Registro Exitoso</h1>"
                     + "<a href='index.html'>Regresar a la pagina principal</a>"
                     + "<br>"

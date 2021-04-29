@@ -59,7 +59,7 @@ public class Consultar extends HttpServlet {
         //driver:gestor:puerto//IP/nombreBD
         
         String userName = "root";
-        String password = "ar428719";
+        String password = "=/U_x12%aX";
         
         try{
             //colocamos el tipo de driver
