@@ -13,8 +13,12 @@
         <servlet-class>Eliminar</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>NewServlet</servlet-name>
-        <servlet-class>NewServlet</servlet-class>
+        <servlet-name>java</servlet-name>
+        <servlet-class>Eliminar.java</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Actualizar</servlet-name>
+        <servlet-class>Actualizar</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Registro</servlet-name>
@@ -29,8 +33,12 @@
         <url-pattern>/Eliminar</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>NewServlet</servlet-name>
-        <url-pattern>/NewServlet</url-pattern>
+        <servlet-name>java</servlet-name>
+        <url-pattern>/java</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Actualizar</servlet-name>
+        <url-pattern>/Actualizar</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
